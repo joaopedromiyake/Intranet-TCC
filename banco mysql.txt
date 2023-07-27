@@ -1,0 +1,30 @@
+
+create database intratec;
+
+use intratec;
+
+create table docente(
+matricula int primary key,
+nome varchar(50),
+contato varchar(20),
+email varchar(50) unique,
+nascimento date,
+senha varchar(50),
+area varchar(50)
+);
+
+select * from docente;
+
+create table login(
+id int primary key auto_increment,
+nome varchar(50),
+usuario varchar(20),
+senha varchar(8)
+);
+
+select* from login;
+
+insert into login(nome,usuario,senha)
+values
+('pedro pedreira','ivanildo','123'),
+('maria socorro silva','maryhelp','abc');
